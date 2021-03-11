@@ -1,0 +1,169 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    font-size: 10px;
+}
+
+
+body {
+    font-family: 'Quicksand', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 100vh;
+    background-size: cover;
+    color: #FFFFFF;
+}
+
+.name {
+    min-width: 10px;
+
+}
+
+
+.focus {
+    min-width: 10px;
+}
+
+.date {
+    font-size: 7rem;
+}
+
+.time {
+    font-size: 6rem;
+}
+
+
+h2 {
+
+    margin-bottom: 0.5rem;
+}
+
+.greeting-div {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+}
+
+.weather {
+    color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    font-size: 1.5rem;
+}
+
+.btn {
+    color: white;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 25%;
+    border-color: rgba(255, 255, 255, 0.5);;
+    font-size: 15px;
+    width: 60px;
+    height: 60px;
+    filter: grayscale(1);
+    margin: 10px;
+}
+
+.btn-quote {
+    color: white;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 25%;
+    border-color: rgba(255, 255, 255, 0.5);;
+    font-size: 15px;
+    width: 60px;
+    height: 60px;
+    filter: grayscale(1);
+    margin: 10px;
+}
+
+
+.btn-quote:hover {
+    background-color: rgba(255, 255, 255, 0.8);
+    cursor: pointer;
+
+}
+
+.btn-quote:active,
+.btn-quote:focus {
+    outline: 0;
+}
+
+.btn-quote:active {
+    transform: scale(0.8);
+}
+
+
+.btn:hover {
+    background-color: rgba(255, 255, 255, 0.8);
+    cursor: pointer;
+
+}
+
+.btn:active,
+.btn:focus {
+    outline: 0;
+}
+
+.btn:active {
+    transform: scale(0.8);
+}
+
+.input-weather {
+    background: none;
+    border: none;
+    text-align: center;
+    font-style: italic;
+    font-size: 1.5rem;
+    color: #FFFFFF;
+}
+
+.quote {
+    font: 1.5rem Georgia, serif;
+    margin: 0;
+    background-color: rgba(128, 128, 128, 0.5);
+    padding: 5px;
+    border-radius: 1em;
+
+}
+
+.quote figcaption,
+.quote blockquote {
+    margin: 5px;
+}
+
+.quote figcaption {
+    text-align: right;
+}
+
+.button-div {
+    display: flex;
+}
+
+@media (max-width: 720px) {
+    .date {
+        font-size: 5rem;
+    }
+
+    .time {
+        font-size: 4rem;
+    }
+
+    .greeting {
+        font-size: 4rem;
+    }
+
+    .name {
+        min-width: 10px;
+        font-size: 4rem;
+    }
+
+
+}
+

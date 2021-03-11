@@ -1,0 +1,140 @@
+[
+  {
+    "title": "Norway",
+    "en": {
+      "country": "Norway",
+      "capital": "Oslo",
+      "image": "/assets/images/norway.jpg",
+      "description": "Norway, country of northern Europe that occupies the westernhalf of the Scandinavian peninsula. Nearly half of the inhabitants of the country live in the far south, in the region around Oslo, the capital. About two-thirds of Norway is mountainous, and off its much-indented coastline lie, carved by deep glacial fjords, some 50,000 islands.",
+      "coordinates": {
+        "lat": "59.911491",
+        "lon": "10.757933"
+      },
+      "video": "https://www.youtube.com/embed/Scxs7L0vhZ4",
+      "attractions": [
+        {
+          "name": "Sognefjord",
+          "image": "/assets/images/norway/sognefjord.jpg",
+          "description": "The largest of Norway's fjords, Sognefjord reaches 204 kilometers inland from the coastal village of Skjolden and branches off into countless smaller inlets and fjords along the way."
+        },
+        {
+          "name": "Viking Ship Museum, Oslo",
+          "image": "/assets/images/norway/museum.jpg",
+          "description": "The largest of Norway's museums dedicated to their seafaring ancestors, the Viking Ship Museum (Vikingskipshuset på Bygdøy) in Oslo features three 9th-century Viking vessels, each of which had been laid to rest as burial chambers for prominent Vikings."
+        },
+        {
+          "name": "Geirangerfjord",
+          "image": "/assets/images/norway/geirangerfjord.jpg",
+          "description": "Part of the spectacular Fjord Norway network - and regularly topping the UNESCO World Heritage Sites list - the Geirangerfjord region north of Ålesund offers some of the finest scenery anywhere in Norway."
+        },
+        {
+          "name": "Akershus Fortress, Oslo",
+          "image": "/assets/images/norway/castle.jpg",
+          "description": "The Akershus Fortress (Akershus Festning) is a medieval castle commissioned by king Håkon V in 1299, later turned into a Renaissance royal residence by king Christian IV in the early 17th century. It sits on a promontory overlooking the Oslofjord, and the grounds have spectacular views over the harbor."
+        },
+        {
+          "name": "Pulpit Rock/Preikestolen",
+          "image": "/assets/images/norway/rock.jpg",
+          "description": "The most famous tourist attraction in Ryfylke is this spectacular natural viewing point 604 metres above sea level. Take the four-hour hike up to Preikestolen between April and October for the best and most Instagrammable viewing conditions."
+        },
+        {
+          "name": "Bryggen Hanseatic Wharf",
+          "image": "/assets/images/norway/bryggen.jpg",
+          "description": "Bryggen Hanseatic Wharf\nThis wharf has been one of the main trading hubs in Bergen since the Viking Age. The historic houses from the 14th century and mid-16th century are now home to numerous artists producing jewellery, textiles and leather goods."
+        }
+      ],
+      "currency": "NOK",
+      "timezone": "Europe/Oslo"
+    },
+    "ru": {
+      "country": "Норвегия",
+      "capital": "Осло",
+      "image": "/assets/images/norway.jpg",
+      "description": "Норвегия - одна из 4 скандинавских стран, которые расположены на северных просторах Европы. На востоке она граничит со Швецией, Финляндией и Россией, на западе омывается Норвежским морем и Атлантическим океаном, на севере - Баренцевым морем, а на юге - Северным морем. Общая площадь страны составляет 386 958 кв. км. Норвегия - вытянутая и узкая страна, более 30% территории которой покрыто лесами, множеством рек и озёр. Более половины площади страны занято горными массивами.",
+      "coordinates": {
+        "lat": "59.911491",
+        "lon": "10.757933"
+      },
+      "video": "https://www.youtube.com/embed/Scxs7L0vhZ4",
+      "attractions": [
+        {
+          "name": "Согне-фьорд",
+          "image": "/assets/images/norway/sognefjord.jpg",
+          "description": "Самый большой из фьордов Норвегии, Согне-фьорд простирается на 204 километра вглубь суши от прибрежной деревни Скьолден и по пути разветвляется на бесчисленное множество меньших заливов и фьордов."
+        },
+        {
+          "name": "Музей кораблей викингов, Осло",
+          "image": "/assets/images/norway/museum.jpg",
+          "description": "Описывая достопримечательности Норвегии, ваше внимание хочется обратить на построенный в 1913 году музей. В нем хранятся ладьи, поднятые с морского дна. Научные исследования показали, что все они были сооружены в IX веке, а на глинистом дне пролежали 1000 лет. Предполагается, что одно из суден, а именно с резными узорами, в свое время принадлежало жене вождя. "
+        },
+        {
+          "name": "Гейрангер-фьорд",
+          "image": "/assets/images/norway/geirangerfjord.jpg",
+          "description": "Вряд ли вы останетесь равнодушными, если своими глазами увидите это творение природы. Речь идет о небольшом, но с великолепным ландшафтом, фьорде. Его длина составляет 20 км, однако это не мешает ему быть самым посещаемым. Оценивая все достопримечательности Норвегии, бывалые туристы на первое место ставят именно глубоководный изумрудный морской залив со скалистыми берегами."
+        },
+        {
+          "name": "Крепость Акерсхус, Осло",
+          "image": "/assets/images/norway/castle.jpg",
+          "description": "Крепость Акерсхус (Akershus Festning) - средневековый замок, построенный по заказу короля Хокона V в 1299 году, позже превращенный в королевскую резиденцию эпохи Возрождения королем Кристианом IV в начале 17 века. Он расположен на мысе с видом на Осло-фьорд, а с территории открываются захватывающие виды на гавань."
+        },
+        {
+          "name": "Прекестулен",
+          "image": "/assets/images/norway/rock.jpg",
+          "description": "The most famous tourist attraction in Ryfylke is this spectacular natural viewing point 604 metres above sea level. Take the four-hour hike up to Preikestolen between April and October for the best and most Instagrammable viewing conditions."
+        },
+        {
+          "name": "Брюгген",
+          "image": "/assets/images/norway/bryggen.jpg",
+          "description": "Постарайтесь попасть на скалу Прекестулен, которая считается самой знаменитой достопримечательностью региона Рюфюльке. Над морским заливом Люсе со скалистыми берегами она возвышается на целых 604 м, а площадь горного плато достигает 600 м2. Согласно предположениям археологов, его образование датируется 10-ю тысячами лет назад."
+        }
+      ],
+      "currency": "NOK",
+      "timezone": "Europe/Oslo"
+    },
+    "de": {
+      "country": "Norwegen",
+      "capital": "Oslo",
+      "image": "/assets/images/norway.jpg",
+      "description": "Norwegen, Land Nordeuropas, das die westliche Hälfte der skandinavischen Halbinsel einnimmt. Fast die Hälfte der Einwohner des Landes lebt im äußersten Süden in der Region um die Hauptstadt Oslo. Ungefähr zwei Drittel Norwegens sind bergig, und vor seiner stark eingedrückten Küste liegen etwa 50.000 Inseln, die von tiefen Gletscherfjorden geschnitzt wurden.",
+      "coordinates": {
+        "lat": "59.911491",
+        "lon": "10.757933"
+      },
+      "video": "https://www.youtube.com/embed/Scxs7L0vhZ4",
+      "attractions": [
+        {
+          "name": "Sognefjord",
+          "image": "/assets/images/norway/sognefjord.jpg",
+          "description": "Der Sognefjord, der größte Fjord Norwegens, erreicht 204 Kilometer landeinwärts vom Küstendorf Skjolden und zweigt auf dem Weg in unzählige kleinere Buchten und Fjorde ab."
+        },
+        {
+          "name": "Wikingerschiffsmuseum, Oslo",
+          "image": "/assets/images/norway/museum.jpg",
+          "description": "Das Wikingerschiffsmuseum (Vikingskipshuset på Bygdøy) in Oslo ist das größte norwegische Museum, das seinen Vorfahren der Seefahrt gewidmet ist. Es verfügt über drei Wikingerschiffe aus dem 9. Jahrhundert, die jeweils als Grabkammern für prominente Wikinger zur Ruhe gelegt wurden."
+        },
+        {
+          "name": "Geirangerfjord",
+          "image": "/assets/images/norway/geirangerfjord.jpg",
+          "description": "Die Region Geirangerfjord nördlich von Ålesund ist Teil des spektakulären Fjordnorwegen-Netzwerks und steht regelmäßig ganz oben auf der Liste der UNESCO-Welterbestätten. Sie bietet einige der schönsten Landschaften Norwegens."
+        },
+        {
+          "name": "Festung Akershus, Oslo",
+          "image": "/assets/images/norway/castle.jpg",
+          "description": "Die Akershus-Festung (Akershus Festning) ist eine mittelalterliche Burg, die 1299 von König Håkon V. in Auftrag gegeben wurde und später im frühen 17. Jahrhundert von König Christian IV. In eine königliche Renaissance-Residenz umgewandelt wurde. Es liegt auf einem Vorgebirge mit Blick auf den Oslofjord und das Gelände bietet einen spektakulären Blick über den Hafen."
+        },
+        {
+          "name": "Preikestolen",
+          "image": "/assets/images/norway/rock.jpg",
+          "description": "Die berühmteste Touristenattraktion in Ryfylke ist dieser spektakuläre natürliche Aussichtspunkt 604 Meter über dem Meeresspiegel. Machen Sie zwischen April und Oktober die vierstündige Wanderung nach Preikestolen, um die besten und instagrammartigsten Betrachtungsbedingungen zu erhalten."
+        },
+        {
+          "name": "Bryggen Hanseatic Wharf",
+          "image": "/assets/images/norway/bryggen.jpg",
+          "description": "Dieser Kai ist seit der Wikingerzeit eines der wichtigsten Handelszentren in Bergen. In den historischen Häusern aus dem 14. und Mitte des 16. Jahrhunderts befinden sich heute zahlreiche Künstler, die Schmuck, Textilien und Lederwaren herstellen."
+        }
+      ],
+      "currency": "NOK",
+      "timezone": "Europe/Oslo"
+    }
+  }
+]
