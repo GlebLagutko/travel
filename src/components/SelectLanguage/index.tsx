@@ -3,6 +3,8 @@ import {Translate} from "@material-ui/icons";
 import {MenuItem, Select} from "@material-ui/core";
 import {useSelector, useDispatch} from 'react-redux';
 import {CHANGE_LANGUAGE} from "../../store/actions/ChangeLanguage";
+import {saveState} from "../../store/SaveState";
+import store from "../../store";
 
 
 const styles = {
@@ -22,9 +24,8 @@ export function SelectLanguage() {
 
 
     function changeLanguageState(newLanguage) {
-
-       console.log(newLanguage)
         dispatch({type: CHANGE_LANGUAGE, value: newLanguage});
+        saveState(store);
     }
 
 

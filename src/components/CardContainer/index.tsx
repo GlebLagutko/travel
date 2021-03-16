@@ -1,8 +1,8 @@
-import React, {useEffect, useState} from "react";
-import {data} from "../../data";
+import React, {useState} from "react";
 import CountryCard from "../CountryCard";
 import {makeStyles} from "@material-ui/core/styles";
 import {useSelector} from "react-redux";
+import {gql, useQuery} from "@apollo/client";
 
 
 interface ContainerProps {
@@ -15,38 +15,50 @@ const useStyles = makeStyles({
         flexWrap: "wrap",
         justifyContent: "space-around",
         maxWidth: "1200",
-        columnGap:"30px",
-        rowGap:"30px",
-        margin:"50px 0px",
-        minHeight:400,
+        columnGap: "30px",
+        rowGap: "30px",
+        padding: "50px 0",
     },
 });
-
-
 
 
 const languageState = state => state.value.language;
 
 export function CardContainer({searchValue}: ContainerProps) {
 
-    let [countries, setCountries] = useState([]);
-
+    const [countries, setCountries] = useState([]);
     const language = useSelector(languageState);
-    const cards = [];
-    const styles = useStyles();
 
-    useEffect(() => {
-        setCountries(data);
-    }, []);
+    const query = gql`
+        query Countries($language: String!){
+            Countries(language: $language){
+                id
+                name
+                video
+                urlName
+                capital
+            }
+        }`;
+
+    useQuery(query, {
+        variables: {language: language},
+        onCompleted: data => {
+            setCountries(data["Countries"]);
+            console.log(countries);
+        }
+    });
+    //
+    const cards = [];
 
 
     countries.forEach((elem) => {
-        if (elem[language].country.toLowerCase().match(searchValue.toLowerCase()) || elem[language].capital.toLowerCase().match(searchValue.toLowerCase())) {
-            cards.push(<CountryCard country={elem}/>);
+        let search = searchValue.toLowerCase();
+        if (elem.name.toLowerCase().match(search) || elem.capital.toLowerCase().match(search)) {
+            cards.push(<CountryCard country={elem} key={elem.id}/>);
         }
     });
 
-
+    const styles = useStyles();
     return (<div className={styles.root}>
         {
             cards

@@ -1,0 +1,1 @@
+export const CHANGE_RESULTS_SHOW: string = "CHANGE_RESULTS_SHOW"

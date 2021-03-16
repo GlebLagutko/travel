@@ -4,6 +4,7 @@ import MainHeader from "../MainHeader";
 import CountryCard from "../CountryCard";
 import {CardContainer} from "../CardContainer";
 import {makeStyles} from "@material-ui/core/styles";
+import {Footer} from "../../Footer";
 
 const useStyles = makeStyles({
     root: {
@@ -14,25 +15,15 @@ const useStyles = makeStyles({
     },
 });
 
-
-const currentCountryState: any = state => state.currentPage;
-
-const languageState = state => state.value.language;
-
 export function MainPage() {
 
     const styles = useStyles();
 
-
-    const language = useSelector(languageState);
-    const currentCountry: string = useSelector(currentCountryState);
     let [searchValue, setSearchValue] = useState('');
 
     function changeSearchValue(newValue: string): void {
         setSearchValue(newValue);
-        console.log(searchValue);
     }
-
 
     return (<div className={styles.root}>
         <MainHeader changeHolder={changeSearchValue}/>

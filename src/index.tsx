@@ -5,6 +5,8 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import store from "./store";
 import {Provider} from 'react-redux'
+import 'bootstrap/dist/css/bootstrap.min.css';
+import 'bootstrap/dist/js/bootstrap.bundle.min';
 import {ApolloProvider} from "@apollo/client";
 import {
     BrowserRouter as Router,

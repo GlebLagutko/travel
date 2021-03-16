@@ -1,8 +1,7 @@
 import {WeatherIcon} from 'react-open-weather';
 import React, {useEffect, useState} from "react";
 import {useSelector} from 'react-redux'
-import set = Reflect.set;
-
+import {trackPromise} from 'react-promise-tracker'
 
 const languageState = state => state.value.language;
 
@@ -14,16 +13,12 @@ export const WeatherWidget = ({city, cityCoordinates}) => {
         weather: false, main: undefined
     });
 
-
     useEffect(() => {
-
-
-        fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=da9c9689fa19ac3ed3a29bbd3670acdc&lang=${language}&units=metric`)
-            .then(response => response.json()).then(result => {
-            console.log('-------------')
-            setData(result);
-            console.log(data)
-        });
+        trackPromise(
+            fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=da9c9689fa19ac3ed3a29bbd3670acdc&lang=${language}&units=metric`)
+                .then(response => response.json()).then(result => {
+                setData(result);
+            }));
 
     }, [language]);
 
@@ -35,7 +30,7 @@ export const WeatherWidget = ({city, cityCoordinates}) => {
                 <div>{data.weather ? data.weather[0].description : 0}</div>
             </div>
             <div className="weather-icon">
-                <img src={`http://openweathermap.org/img/wn/${data.weather ? data.weather[0].icon : ''}@2x.png`}
+                <img src={`https://openweathermap.org/img/wn/${data.weather ? data.weather[0].icon : ''}@2x.png`}
                      style={{height: "40px"}}/>
             </div>
         </div>

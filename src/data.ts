@@ -894,7 +894,7 @@ export const data = JSON.parse(JSON.stringify([
         title: "Australia",
         "en": {
             "country": "Australia",
-            "capital": "Canberra",
+                "capital": "Canberra",
             "map": "mapbox://styles/gleblagutko1/ckm3vkip91f1z17lhwuslb4fj",
             "video": "https://www.youtube.com/embed/4fYOANcoDSI",
             "timezone": "Australia/Canberra",
@@ -1142,5 +1142,4 @@ export const data = JSON.parse(JSON.stringify([
             ]
         }
     },
-
 ]));

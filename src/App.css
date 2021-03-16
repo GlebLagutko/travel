@@ -1,5 +1,9 @@
 @import "~react-image-gallery/styles/css/image-gallery.css";
 
+* {
+    letter-spacing: normal;
+    line-height: normal;
+}
 
 .App {
     text-align: center;
@@ -69,6 +73,12 @@ h3 {
     padding: 20px;
 }
 
+@media (max-width: 500px) {
+    .mainTextContainer {
+        margin-top: 70px;
+    }
+}
+
 .countryDescription {
     color: white;
 }
@@ -105,6 +115,64 @@ svg {
     padding: 10px !important;
 }
 
+
+#popup-root {
+    width: 400px;
+}
+
+.modal {
+    font-size: 12px;
+    min-width: 400px;
+}
+
+.modal > .header {
+    min-width: 400px;
+    border-bottom: 1px solid gray;
+    font-size: 18px;
+    text-align: center;
+    padding: 5px;
+}
+
+.modal > .content {
+    width: 100%;
+    height: 100%;
+}
+
+.modal-content {
+
+    min-width: 400px !important;
+    min-height: 300px !important;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal > .content {
+    min-width: 400px !important;
+    padding: 10px 5px;
+}
+
+.modal > .actions {
+    width: 100%;
+    padding: 10px 5px;
+    margin: auto;
+    text-align: center;
+}
+
+.modal > .close {
+    cursor: pointer;
+    position: absolute;
+    display: block;
+    padding: 2px 5px;
+    line-height: 20px;
+    right: -10px;
+    top: -10px;
+    font-size: 24px;
+    background: #ffffff;
+    border-radius: 18px;
+    border: 1px solid #cfcece;
+}
+
+
 .current-d6-1-2-22 {
     font-size: 35px;
 }
@@ -117,15 +185,31 @@ svg {
 
 .exchange-div {
     display: flex;
+    flex-direction: column;
     justify-content: space-around;
     flex-wrap: wrap;
+    align-items: start;
     font-family: "Times New Roman", Arial, Helvetica, sans-serif;
-    background: linear-gradient(#e66465, #9198e5);
-    height: auto;
-    width: 130px;
+
+    background-color: rgba(0, 0, 0, 0.0);
+    color: white;
+    width: 110px;
+    line-height: normal;
+
+}
+
+.exchange {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     position: absolute;
-    top: 50px;
-    left: calc(100vw - 150px);
+    top: 70px;
+    left: calc(100% - 300px);
+    column-gap: 5px;
+    background-color: rgba(0, 0, 0, 0.3);
+    padding: 5px;
+    border-radius: 15px;
+
 
 }
 
@@ -144,8 +228,8 @@ svg {
     width: 80px;
     border-radius: 15px;
     position: absolute;
-    top: 200px;
-    left: calc(100vw - 150px);
+    top: 70px;
+    left: 110px;
     background-color: #FFFFFF;
 
 }
@@ -154,8 +238,8 @@ svg {
     background-color: #FFFFFF;
     border-radius: 100%;
     position: absolute;
-    top: 200px;
-    left: calc(100vw - 250px);
+    top: 70px;
+    left: 5px;
 
 }
 
@@ -167,30 +251,36 @@ svg {
 }
 
 .day-div {
+    letter-spacing: normal;
     font-size: 30px;
     font-weight: 700;
 }
 
 .weather-div {
+    letter-spacing: normal;
     font-family: "Times New Roman", sans-serif;
     display: flex;
     height: 55px;
-    width: 150px;
+    width: 130px;
     border-radius: 15px;
     background-color: #61daf1;
+    background-color: rgba(0, 0, 0, 0.4);
+    color: #FFFFFF;
     position: absolute;
-    top: 100px;
-    left: calc(100% - 200px);
+    top: 70px;
+    left: calc(100% - 140px);
+    justify-content: space-between;
 }
 
 .weather-icon {
     height: 55px;
-    width: 60%;
+    width: 40%;
     display: flex;
     justify-content: center;
     align-items: center;
     border-radius: 0 15px 15px 0;
     background-color: #61dafb;
+    background-color: rgba(0, 0, 0, 0.2);
 }
 
 .map-container {
@@ -198,15 +288,114 @@ svg {
     height: 100%;
 }
 
-.main_wrapper{
+.main_wrapper {
     width: 100%;
     display: flex;
     justify-content: space-between;
 }
 
-.weather-info{
+.weather-info {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    padding: 0 0 0 5px;
+    letter-spacing: normal;
 }
+
+.spinner {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -50px;
+    margin-left: -50px;
+    width: 100px;
+    height: 100px;
+}
+
+.home-icon:hover {
+    cursor: pointer;
+}
+
+footer {
+    display: flex !important;
+    justify-content: space-around;
+    width: 100%;
+    align-items: center;
+    border-bottom: 1px solid;
+    border-top: 1px solid;
+}
+
+.main-div {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.MuiToolbar-root {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.clear-icon {
+    cursor: pointer;
+}
+
+.MuiToolbar-root.MuiToolbar-regular.MuiToolbar-gutters {
+    min-height: 64px;
+}
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted black;
+}
+
+.tooltip .tooltiptext {
+    width: 120px;
+    top: 100%;
+    left: 50%;
+    margin-left: -60px; /* Use half of the width (120/2 = 60), to center the tooltip */
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+}
+
+.login {
+    margin-left: 15px;
+}
+
+.login:hover {
+    cursor: pointer;
+}
+
+.results-row:hover {
+    cursor: pointer;
+    background-color: silver;
+}
+
+.MuiTableContainer-root {
+    max-height: 300px;
+}
+
+body {
+    min-width: 500px;
+}
+
+.modal-backdrop {
+    height: 100%;
+    width: 100%;
+}
+
+.MuiButton-root {
+    margin-bottom: 10px !important;
+}
+
+.user-info:hover {
+    cursor: pointer;
+}
+
+
 

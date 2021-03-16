@@ -27,10 +27,13 @@ export default function ExchangeWidget({country}) {
     }, [])
 
     return (
-        <div className="exchange-div">
-            <div><strong>USD</strong> : {rates[0]}</div>
-            <div><strong>EUR</strong> : {rates[1]}</div>
-            <div><strong>BYN</strong> : {rates[2]}</div>
+        <div className='exchange'>
+            <div style={{color: 'black'}}><strong>{country.currency}</strong></div>
+            <div className="exchange-div">
+                <div><strong>USD</strong> : {rates[0]}</div>
+                <div><strong>EUR</strong> : {rates[1]}</div>
+                <div><strong>BYN</strong> : {rates[2]}</div>
+            </div>
         </div>
     );
 }

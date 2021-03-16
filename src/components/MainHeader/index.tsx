@@ -1,15 +1,16 @@
 import React, {useRef} from 'react';
 import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
-import IconButton from '@material-ui/core/IconButton';
 import Typography from '@material-ui/core/Typography';
 import InputBase from '@material-ui/core/InputBase';
-import {createStyles, fade, Theme, makeStyles} from '@material-ui/core/styles';
-import MenuIcon from '@material-ui/icons/Menu';
+import {createStyles, fade, makeStyles, Theme} from '@material-ui/core/styles';
 import SearchIcon from '@material-ui/icons/Search';
-import {Clear, ClearOutlined} from "@material-ui/icons";
+import {ClearOutlined} from "@material-ui/icons";
 import {SelectLanguage} from "../SelectLanguage";
 import {useSelector} from 'react-redux'
+import {UserInfo} from "../UserInfo";
+import strings from '../localization'
+
 
 const useStyles = makeStyles((theme: Theme) =>
     createStyles({
@@ -51,15 +52,7 @@ const useStyles = makeStyles((theme: Theme) =>
             justifyContent: 'center',
         },
 
-        clearIcon: {
-            padding: theme.spacing(-2, -2),
-            height: '100%',
-            position: 'absolute',
-            pointerEvents: 'none',
-            display: 'flex',
-            alignItems: 'center',
-            justifyContent: 'center',
-        },
+        clearIcon: {},
         inputRoot: {
             color: 'inherit',
         },
@@ -76,6 +69,10 @@ const useStyles = makeStyles((theme: Theme) =>
                 },
             },
         },
+        divSearch: {
+            display: "flex",
+            alignItems: "center",
+        }
     }),
 );
 
@@ -84,40 +81,53 @@ interface HeaderProps {
 }
 
 const languageState = state => state.value.language;
+
 export default function MainHeader({changeHolder}: HeaderProps) {
     const classes = useStyles();
+
     const inputRef = useRef(null);
     const language = useSelector(languageState);
+    strings.setLanguage(language)
+
+    const placeHolder = strings.search;
+
 
     return (
         <div className={classes.root}>
             <AppBar position="static">
-
                 <Toolbar>
                     <SelectLanguage/>
                     <Typography className={classes.title} variant="h6" noWrap>
                         Travel app
                     </Typography>
-                    <div className={classes.search}>
+                    <div className={classes.divSearch}>
+                        <div className={classes.searchIcon}>
+                            <SearchIcon/>
+                        </div>
+                        <div className={classes.search}>
+                            <InputBase
+                                ref={inputRef}
+                                placeholder={placeHolder}
+                                classes={{
+                                    root: classes.inputRoot,
+                                    input: classes.inputInput,
+                                }}
+                                inputProps={{'aria-label': 'search'}}
+                                onChange={(event) => changeHolder(event.currentTarget.value)}
+                            />
+                        </div>
+                        <div onClick={() => {
+                            console.log(inputRef.current.firstChild);
+                            changeHolder('');
+                            inputRef.current.firstChild.value = '';
+                        }}
+                             className='clear-icon'
+                        >
+                            <ClearOutlined/>
+                        </div>
+                    </div>
+                    <UserInfo/>
 
-                        <InputBase
-                            placeholder={language === "en" ? "Search…" : language === "ru" ? "Поиск…" : "Suche…"}
-                            classes={{
-                                root: classes.inputRoot,
-                                input: classes.inputInput,
-                            }}
-                            inputProps={{'aria-label': 'search'}}
-                            onChange={(event) => changeHolder(event.currentTarget.value)}
-                            ref={inputRef}
-                        />
-                    </div>
-                    <div onClick={() => {
-                        console.log(inputRef.current.firstChild);
-                        inputRef.current.firstChild.value = '';
-                        changeHolder('');
-                    }}>
-                        <ClearOutlined/>
-                    </div>
                 </Toolbar>
             </AppBar>
         </div>

@@ -1,22 +1,39 @@
 import React, {useEffect, useRef, useState} from 'react';
+import {YMaps, Map, Placemark, FullscreenControl, ZoomControl, Panorama, Polygon, Polyline} from 'react-yandex-maps';
 import {useSelector} from 'react-redux'
+import {MapContainer, Marker, Popup, TileLayer} from "react-leaflet";
 import mapboxgl from 'mapbox-gl/dist/mapbox-gl-csp';
 // @ts-ignore
 // eslint-disable-next-line import/no-webpack-loader-syntax
 import MapboxWorker from 'worker-loader!mapbox-gl/dist/mapbox-gl-csp-worker';
+import {createStyles, makeStyles, Theme} from "@material-ui/core/styles";
 
 mapboxgl.workerClass = MapboxWorker;
 
 mapboxgl.accessToken = 'pk.eyJ1IjoiZ2xlYmxhZ3V0a28xIiwiYSI6ImNrbTNid2s0dzA0NjEyb282MXRjcWkxZ3AifQ.nMh6pzF_AeQP5LYVbFYWDg';
 
+const useStyles = makeStyles((theme: Theme) =>
+    createStyles({
+        root: {
+            minWidth: "300px",
+            height: "300px",
+            width: '70%',
+            maxWidth:"1000px"
+        }
+
+
+    }),
+);
 
 const languageState = state => state.value.language;
+
 
 export const CountryMap = ({country}) => {
     const mapContainer = useRef();
     const [lng, setLng] = useState(-70.9);
     const [lat, setLat] = useState(42.35);
     const [zoom, setZoom] = useState(9);
+    const classes = useStyles();
 
     const language = useSelector(languageState);
 
@@ -25,7 +42,7 @@ export const CountryMap = ({country}) => {
             container: mapContainer.current,
             style: `${country.map}`,
             center: [country.coordinates.lon, country.coordinates.lat],
-            zoom: 1
+            zoom: 2
         });
 
 
@@ -46,7 +63,6 @@ export const CountryMap = ({country}) => {
 
         map.on('load', () => {
 
-            console.log(map.getStyle().layers);
             map.setLayoutProperty(`country-label`, 'text-field', [
                 'get',
                 'name_' + language
@@ -71,47 +87,9 @@ export const CountryMap = ({country}) => {
 
 
     return (
-        <div style={{width: "500px", height: "350px"}}>
+        <div className={classes.root}>
             <div className="map-container" ref={mapContainer}/>
         </div>
     );
 };
 
-/*
-export const CountryMap = ({country}) => {
-
-
-    const position = [country.coordinates.lat, country.coordinates.lon];
-
-
-    console.log("map " + language);
-    console.log(`${language}_${"RU"}`);
-
-
-
-    return (
-        <MapContainer center={position} zoom={2} scrollWheelZoom={false} style={{width:"500px",height:"350px"}} >
-            <TileLayer
-                attribution='&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
-                url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
-            />
-            <Marker position={position}>
-                <Popup>
-                    A pretty CSS3 popup. <br /> Easily customizable.
-                </Popup>
-            </Marker>
-        </MapContainer>
-    )
-
-
-  /!*  return (<YMaps query={{lang: `${language}_${"RU"}`.toString()}}>
-        <div>
-            <Map defaultState={{center: [country.coordinates.lat, country.coordinates.lon], zoom: 2}}>
-                <Placemark geometry={[country.coordinates.lat, country.coordinates.lon]}/>
-                <FullscreenControl/>
-                <ZoomControl/>
-            </Map>
-        </div>
-    </YMaps>)*!/
-};
-*/

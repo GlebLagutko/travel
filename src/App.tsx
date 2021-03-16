@@ -1,46 +1,51 @@
 import './App.css';
 
 import React from 'react';
-import CountryCard from "./components/CountryCard";
 import {MainPage} from "./components/MainPage";
+import {LoadingSpinner} from './components/LoadingSpinner';
 
 import {useSelector} from 'react-redux'
 
-import {
-    BrowserRouter as Router,
-    Switch,
-    Route,
-    Link,
-    Redirect
-} from "react-router-dom";
+import {Link, Redirect, Route, Switch} from "react-router-dom";
 import {CountryPage} from "./components/CountryPage";
-import {data} from "./data";
+import {ApolloClient, ApolloProvider, InMemoryCache} from '@apollo/client';
+import {Footer} from "./Footer";
+import {ModalLogin} from "./components/ModalLogin/ModalLogin";
+import {Login} from "./components/Login";
+import {createUploadLink} from 'apollo-upload-client'
+import {ModalLogou} from "./components/ModalLogout";
 
 
-const languageState = state => state.language;
+export const client = new ApolloClient({
+    uri: "http://localhost:3020/graphql",
+    cache: new InMemoryCache(),
+    link: createUploadLink({
+        uri: 'http://localhost:3020/graphql',
+    }),
+});
+
+
 const countryState = state => state.value.country;
 
 function App() {
-    const country = useSelector(countryState);
+    const countryName = useSelector(countryState);
 
-
-    const pages = data.map(elem =>
-        <Route exact path={`/${elem.title.toLowerCase()}`}><CountryPage country={elem.title}/></Route>);
-
-    console.log(pages);
-
+    const currentPage = countryName.urlName === 'Main page' ? <MainPage/> : <CountryPage/>;
 
     return (
-        <div className="App">
-            <Switch>
+        <div className='main-div'>
+            <div className="App">
+                <ApolloProvider client={client}>
+                    {
+                        currentPage
+                    }
+                    <ModalLogin/>
+                    <ModalLogou/>
+                </ApolloProvider>
+                <LoadingSpinner/>
 
-                <Route exact path='/' component={MainPage}/>
-                {
-                    pages
-                }
-
-
-            </Switch>
+            </div>
+            <Footer/>
         </div>
     );
 }
