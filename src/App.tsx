@@ -14,7 +14,7 @@ import {ModalLogin} from "./components/ModalLogin/ModalLogin";
 import {createUploadLink} from 'apollo-upload-client'
 import ModalLogout from "./components/ModalLogout";
 // @ts-ignore
-import Footer from "./Footer";
+import Footer from "./components/Footer";
 
 
 export const client = new ApolloClient({

@@ -1,7 +1,7 @@
 import {create} from 'react-test-renderer';
 
 import React from "react";
-import Footer from ".";
+import Footer from "./index";
 
 describe('Footer', () => {
   it('renders correctly', async () => {
