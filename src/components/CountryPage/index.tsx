@@ -1,18 +1,16 @@
-import React, {useEffect, useState} from 'react'
+import React, {useState} from 'react'
 import {useDispatch, useSelector} from 'react-redux'
 import CountryHeader from "../CountryHeader";
 import {makeStyles} from "@material-ui/core/styles";
-import {WeatherWidget} from "../WeatherWidget";
+import WeatherWidget from "../WeatherWidget";
 import {Slideshow} from "../AttractionsSlider";
 import {CountryMap} from "../CountryMap";
 import ExchangeWidget from "../ExchangeRates";
 import DateWidget from "../DateWidget";
-import {ClockWidget} from "../TimeWidget";
+import ClockWidget from "../TimeWidget";
 
 import {gql, useQuery} from "@apollo/client";
-import {Footer} from "../../Footer";
 import VideoWidget from "../VideoWidget";
-import {VoteBar} from "../VoteBar";
 import {ButtonVote} from "../VoteButton";
 import {VoteModal} from "../VoteModal";
 import {ModalResults} from "../ModalResults";
@@ -127,7 +125,7 @@ export function CountryPage() {
         }`;
 
 
-    useQuery(query, {
+    const {refetch} = useQuery(query, {
         variables: {name: countryInfo.urlName, language: language},
         onCompleted: data => {
             console.log('========data=======');
@@ -135,12 +133,10 @@ export function CountryPage() {
             setCountry(data["CountryByNameAndLanguage"]);
             console.log(country);
         },
-        fetchPolicy: "no-cache"
+        fetchPolicy: "no-cache",
+        notifyOnNetworkStatusChange: true,
     });
 
-    useEffect(() => {
-
-    }, [show])
 
     if (country == null)
         return <div/>
@@ -169,7 +165,7 @@ export function CountryPage() {
             <ExchangeWidget country={country}/>
             <DateWidget country={country}/>
             <ClockWidget country={country}/>
-            <VoteModal attractions={country.Attractions}/>
+            <VoteModal attractions={country.Attractions} refetchFunction={refetch}/>
             <ModalResults attractions={country.Attractions}/>
         </div>)
 }

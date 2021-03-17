@@ -1,10 +1,6 @@
-import React, {useRef, useState} from 'react';
-import Popup from 'reactjs-popup';
+import React from 'react';
 
-import {Button, Modal} from 'react-bootstrap';
-
-
-export function Footer() {
+export default function Footer() {
 
 
     return (

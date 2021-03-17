@@ -1,0 +1,1220 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ClockWidget renders correctly 1`] = `
+<div
+  className="clocks"
+>
+  <time
+    className="react-clock"
+    dateTime="2021-03-16T16:00:09.000Z"
+    style={
+      Object {
+        "height": "100px",
+        "width": "100px",
+      }
+    }
+  >
+    <div
+      className="react-clock__face"
+    >
+      <div
+        className="react-clock__mark react-clock__minute-mark"
+        style={
+          Object {
+            "transform": "rotate(6deg)",
+          }
+        }
+      >
+        <div
+          className="react-clock__mark__body react-clock__minute-mark__body"
+          style={
+            Object {
+              "bottom": "97%",
+              "top": 0,
+              "width": "1px",
+            }
+          }
+        />
+      </div>
+      <div
+        className="react-clock__mark react-clock__minute-mark"
+        style={
+          Object {
+            "transform": "rotate(12deg)",
+          }
+        }
+      >
+        <div
+          className="react-clock__mark__body react-clock__minute-mark__body"
+          style={
+            Object {
+              "bottom": "97%",
+              "top": 0,
+              "width": "1px",
+            }
+          }
+        />
+      </div>
+      <div
+        className="react-clock__mark react-clock__minute-mark"
+        style={
+          Object {
+            "transform": "rotate(18deg)",
+          }
+        }
+      >
+        <div
+          className="react-clock__mark__body react-clock__minute-mark__body"
+          style={
+            Object {
+              "bottom": "97%",
+              "top": 0,
+              "width": "1px",
+            }
+          }
+        />
+      </div>
+      <div
+        className="react-clock__mark react-clock__minute-mark"
+        style={
+          Object {
+            "transform": "rotate(24deg)",
+          }
+        }
+      >
+        <div
+          className="react-clock__mark__body react-clock__minute-mark__body"
+          style={
+            Object {
+              "bottom": "97%",
+              "top": 0,
+              "width": "1px",
+            }
+          }
+        />
+      </div>
+      <div
+        className="react-clock__mark react-clock__minute-mark"
+        style={
+          Object {
+            "transform": "rotate(36deg)",
+          }
+        }
+      >
+        <div
+          className="react-clock__mark__body react-clock__minute-mark__body"
+          style={
+            Object {
+              "bottom": "97%",
+              "top": 0,
+              "width": "1px",
+            }
+          }
+        />
+      </div>
+      <div
+        className="react-clock__mark react-clock__minute-mark"
+        style={
+          Object {
+            "transform": "rotate(42deg)",
+          }
+        }
+      >
+        <div
+          className="react-clock__mark__body react-clock__minute-mark__body"
+          style={
+            Object {
+              "bottom": "97%",
+              "top": 0,
+              "width": "1px",
+            }
+          }
+        />
+      </div>
+      <div
+        className="react-clock__mark react-clock__minute-mark"
+        style={
+          Object {
+            "transform": "rotate(48deg)",
+          }
+        }
+      >
+        <div
+          className="react-clock__mark__body react-clock__minute-mark__body"
+          style={
+            Object {
+              "bottom": "97%",
+              "top": 0,
+              "width": "1px",
+            }
+          }
+        />
+      </div>
+      <div
+        className="react-clock__mark react-clock__minute-mark"
+        style={
+          Object {
+            "transform": "rotate(54deg)",
+          }
+        }
+      >
+        <div
+          className="react-clock__mark__body react-clock__minute-mark__body"
+          style={
+            Object {
+              "bottom": "97%",
+              "top": 0,
+              "width": "1px",
+            }
+          }
+        />
+      </div>
+      <div
+        className="react-clock__mark react-clock__minute-mark"
+        style={
+          Object {
+            "transform": "rotate(66deg)",
+          }
+        }
+      >
+        <div
+          className="react-clock__mark__body react-clock__minute-mark__body"
+          style={
+            Object {
+              "bottom": "97%",
+              "top": 0,
+              "width": "1px",
+            }
+          }
+        />
+      </div>
+      <div
+        className="react-clock__mark react-clock__minute-mark"
+        style={
+          Object {
+            "transform": "rotate(72deg)",
+          }
+        }
+      >
+        <div
+          className="react-clock__mark__body react-clock__minute-mark__body"
+          style={
+            Object {
+              "bottom": "97%",
+              "top": 0,
+              "width": "1px",
+            }
+          }
+        />
+      </div>
+      <div
+        className="react-clock__mark react-clock__minute-mark"
+        style={
+          Object {
+            "transform": "rotate(78deg)",
+          }
+        }
+      >
+        <div
+          className="react-clock__mark__body react-clock__minute-mark__body"
+          style={
+            Object {
+              "bottom": "97%",
+              "top": 0,
+              "width": "1px",
+            }
+          }
+        />
+      </div>
+      <div
+        className="react-clock__mark react-clock__minute-mark"
+        style={
+          Object {
+            "transform": "rotate(84deg)",
+          }
+        }
+      >
+        <div
+          className="react-clock__mark__body react-clock__minute-mark__body"
+          style={
+            Object {
+              "bottom": "97%",
+              "top": 0,
+              "width": "1px",
+            }
+          }
+        />
+      </div>
+      <div
+        className="react-clock__mark react-clock__minute-mark"
+        style={
+          Object {
+            "transform": "rotate(96deg)",
+          }
+        }
+      >
+        <div
+          className="react-clock__mark__body react-clock__minute-mark__body"
+          style={
+            Object {
+              "bottom": "97%",
+              "top": 0,
+              "width": "1px",
+            }
+          }
+        />
+      </div>
+      <div
+        className="react-clock__mark react-clock__minute-mark"
+        style={
+          Object {
+            "transform": "rotate(102deg)",
+          }
+        }
+      >
+        <div
+          className="react-clock__mark__body react-clock__minute-mark__body"
+          style={
+            Object {
+              "bottom": "97%",
+              "top": 0,
+              "width": "1px",
+            }
+          }
+        />
+      </div>
+      <div
+        className="react-clock__mark react-clock__minute-mark"
+        style={
+          Object {
+            "transform": "rotate(108deg)",
+          }
+        }
+      >
+        <div
+          className="react-clock__mark__body react-clock__minute-mark__body"
+          style={
+            Object {
+              "bottom": "97%",
+              "top": 0,
+              "width": "1px",
+            }
+          }
+        />
+      </div>
+      <div
+        className="react-clock__mark react-clock__minute-mark"
+        style={
+          Object {
+            "transform": "rotate(114deg)",
+          }
+        }
+      >
+        <div
+          className="react-clock__mark__body react-clock__minute-mark__body"
+          style={
+            Object {
+              "bottom": "97%",
+              "top": 0,
+              "width": "1px",
+            }
+          }
+        />
+      </div>
+      <div
+        className="react-clock__mark react-clock__minute-mark"
+        style={
+          Object {
+            "transform": "rotate(126deg)",
+          }
+        }
+      >
+        <div
+          className="react-clock__mark__body react-clock__minute-mark__body"
+          style={
+            Object {
+              "bottom": "97%",
+              "top": 0,
+              "width": "1px",
+            }
+          }
+        />
+      </div>
+      <div
+        className="react-clock__mark react-clock__minute-mark"
+        style={
+          Object {
+            "transform": "rotate(132deg)",
+          }
+        }
+      >
+        <div
+          className="react-clock__mark__body react-clock__minute-mark__body"
+          style={
+            Object {
+              "bottom": "97%",
+              "top": 0,
+              "width": "1px",
+            }
+          }
+        />
+      </div>
+      <div
+        className="react-clock__mark react-clock__minute-mark"
+        style={
+          Object {
+            "transform": "rotate(138deg)",
+          }
+        }
+      >
+        <div
+          className="react-clock__mark__body react-clock__minute-mark__body"
+          style={
+            Object {
+              "bottom": "97%",
+              "top": 0,
+              "width": "1px",
+            }
+          }
+        />
+      </div>
+      <div
+        className="react-clock__mark react-clock__minute-mark"
+        style={
+          Object {
+            "transform": "rotate(144deg)",
+          }
+        }
+      >
+        <div
+          className="react-clock__mark__body react-clock__minute-mark__body"
+          style={
+            Object {
+              "bottom": "97%",
+              "top": 0,
+              "width": "1px",
+            }
+          }
+        />
+      </div>
+      <div
+        className="react-clock__mark react-clock__minute-mark"
+        style={
+          Object {
+            "transform": "rotate(156deg)",
+          }
+        }
+      >
+        <div
+          className="react-clock__mark__body react-clock__minute-mark__body"
+          style={
+            Object {
+              "bottom": "97%",
+              "top": 0,
+              "width": "1px",
+            }
+          }
+        />
+      </div>
+      <div
+        className="react-clock__mark react-clock__minute-mark"
+        style={
+          Object {
+            "transform": "rotate(162deg)",
+          }
+        }
+      >
+        <div
+          className="react-clock__mark__body react-clock__minute-mark__body"
+          style={
+            Object {
+              "bottom": "97%",
+              "top": 0,
+              "width": "1px",
+            }
+          }
+        />
+      </div>
+      <div
+        className="react-clock__mark react-clock__minute-mark"
+        style={
+          Object {
+            "transform": "rotate(168deg)",
+          }
+        }
+      >
+        <div
+          className="react-clock__mark__body react-clock__minute-mark__body"
+          style={
+            Object {
+              "bottom": "97%",
+              "top": 0,
+              "width": "1px",
+            }
+          }
+        />
+      </div>
+      <div
+        className="react-clock__mark react-clock__minute-mark"
+        style={
+          Object {
+            "transform": "rotate(174deg)",
+          }
+        }
+      >
+        <div
+          className="react-clock__mark__body react-clock__minute-mark__body"
+          style={
+            Object {
+              "bottom": "97%",
+              "top": 0,
+              "width": "1px",
+            }
+          }
+        />
+      </div>
+      <div
+        className="react-clock__mark react-clock__minute-mark"
+        style={
+          Object {
+            "transform": "rotate(186deg)",
+          }
+        }
+      >
+        <div
+          className="react-clock__mark__body react-clock__minute-mark__body"
+          style={
+            Object {
+              "bottom": "97%",
+              "top": 0,
+              "width": "1px",
+            }
+          }
+        />
+      </div>
+      <div
+        className="react-clock__mark react-clock__minute-mark"
+        style={
+          Object {
+            "transform": "rotate(192deg)",
+          }
+        }
+      >
+        <div
+          className="react-clock__mark__body react-clock__minute-mark__body"
+          style={
+            Object {
+              "bottom": "97%",
+              "top": 0,
+              "width": "1px",
+            }
+          }
+        />
+      </div>
+      <div
+        className="react-clock__mark react-clock__minute-mark"
+        style={
+          Object {
+            "transform": "rotate(198deg)",
+          }
+        }
+      >
+        <div
+          className="react-clock__mark__body react-clock__minute-mark__body"
+          style={
+            Object {
+              "bottom": "97%",
+              "top": 0,
+              "width": "1px",
+            }
+          }
+        />
+      </div>
+      <div
+        className="react-clock__mark react-clock__minute-mark"
+        style={
+          Object {
+            "transform": "rotate(204deg)",
+          }
+        }
+      >
+        <div
+          className="react-clock__mark__body react-clock__minute-mark__body"
+          style={
+            Object {
+              "bottom": "97%",
+              "top": 0,
+              "width": "1px",
+            }
+          }
+        />
+      </div>
+      <div
+        className="react-clock__mark react-clock__minute-mark"
+        style={
+          Object {
+            "transform": "rotate(216deg)",
+          }
+        }
+      >
+        <div
+          className="react-clock__mark__body react-clock__minute-mark__body"
+          style={
+            Object {
+              "bottom": "97%",
+              "top": 0,
+              "width": "1px",
+            }
+          }
+        />
+      </div>
+      <div
+        className="react-clock__mark react-clock__minute-mark"
+        style={
+          Object {
+            "transform": "rotate(222deg)",
+          }
+        }
+      >
+        <div
+          className="react-clock__mark__body react-clock__minute-mark__body"
+          style={
+            Object {
+              "bottom": "97%",
+              "top": 0,
+              "width": "1px",
+            }
+          }
+        />
+      </div>
+      <div
+        className="react-clock__mark react-clock__minute-mark"
+        style={
+          Object {
+            "transform": "rotate(228deg)",
+          }
+        }
+      >
+        <div
+          className="react-clock__mark__body react-clock__minute-mark__body"
+          style={
+            Object {
+              "bottom": "97%",
+              "top": 0,
+              "width": "1px",
+            }
+          }
+        />
+      </div>
+      <div
+        className="react-clock__mark react-clock__minute-mark"
+        style={
+          Object {
+            "transform": "rotate(234deg)",
+          }
+        }
+      >
+        <div
+          className="react-clock__mark__body react-clock__minute-mark__body"
+          style={
+            Object {
+              "bottom": "97%",
+              "top": 0,
+              "width": "1px",
+            }
+          }
+        />
+      </div>
+      <div
+        className="react-clock__mark react-clock__minute-mark"
+        style={
+          Object {
+            "transform": "rotate(246deg)",
+          }
+        }
+      >
+        <div
+          className="react-clock__mark__body react-clock__minute-mark__body"
+          style={
+            Object {
+              "bottom": "97%",
+              "top": 0,
+              "width": "1px",
+            }
+          }
+        />
+      </div>
+      <div
+        className="react-clock__mark react-clock__minute-mark"
+        style={
+          Object {
+            "transform": "rotate(252deg)",
+          }
+        }
+      >
+        <div
+          className="react-clock__mark__body react-clock__minute-mark__body"
+          style={
+            Object {
+              "bottom": "97%",
+              "top": 0,
+              "width": "1px",
+            }
+          }
+        />
+      </div>
+      <div
+        className="react-clock__mark react-clock__minute-mark"
+        style={
+          Object {
+            "transform": "rotate(258deg)",
+          }
+        }
+      >
+        <div
+          className="react-clock__mark__body react-clock__minute-mark__body"
+          style={
+            Object {
+              "bottom": "97%",
+              "top": 0,
+              "width": "1px",
+            }
+          }
+        />
+      </div>
+      <div
+        className="react-clock__mark react-clock__minute-mark"
+        style={
+          Object {
+            "transform": "rotate(264deg)",
+          }
+        }
+      >
+        <div
+          className="react-clock__mark__body react-clock__minute-mark__body"
+          style={
+            Object {
+              "bottom": "97%",
+              "top": 0,
+              "width": "1px",
+            }
+          }
+        />
+      </div>
+      <div
+        className="react-clock__mark react-clock__minute-mark"
+        style={
+          Object {
+            "transform": "rotate(276deg)",
+          }
+        }
+      >
+        <div
+          className="react-clock__mark__body react-clock__minute-mark__body"
+          style={
+            Object {
+              "bottom": "97%",
+              "top": 0,
+              "width": "1px",
+            }
+          }
+        />
+      </div>
+      <div
+        className="react-clock__mark react-clock__minute-mark"
+        style={
+          Object {
+            "transform": "rotate(282deg)",
+          }
+        }
+      >
+        <div
+          className="react-clock__mark__body react-clock__minute-mark__body"
+          style={
+            Object {
+              "bottom": "97%",
+              "top": 0,
+              "width": "1px",
+            }
+          }
+        />
+      </div>
+      <div
+        className="react-clock__mark react-clock__minute-mark"
+        style={
+          Object {
+            "transform": "rotate(288deg)",
+          }
+        }
+      >
+        <div
+          className="react-clock__mark__body react-clock__minute-mark__body"
+          style={
+            Object {
+              "bottom": "97%",
+              "top": 0,
+              "width": "1px",
+            }
+          }
+        />
+      </div>
+      <div
+        className="react-clock__mark react-clock__minute-mark"
+        style={
+          Object {
+            "transform": "rotate(294deg)",
+          }
+        }
+      >
+        <div
+          className="react-clock__mark__body react-clock__minute-mark__body"
+          style={
+            Object {
+              "bottom": "97%",
+              "top": 0,
+              "width": "1px",
+            }
+          }
+        />
+      </div>
+      <div
+        className="react-clock__mark react-clock__minute-mark"
+        style={
+          Object {
+            "transform": "rotate(306deg)",
+          }
+        }
+      >
+        <div
+          className="react-clock__mark__body react-clock__minute-mark__body"
+          style={
+            Object {
+              "bottom": "97%",
+              "top": 0,
+              "width": "1px",
+            }
+          }
+        />
+      </div>
+      <div
+        className="react-clock__mark react-clock__minute-mark"
+        style={
+          Object {
+            "transform": "rotate(312deg)",
+          }
+        }
+      >
+        <div
+          className="react-clock__mark__body react-clock__minute-mark__body"
+          style={
+            Object {
+              "bottom": "97%",
+              "top": 0,
+              "width": "1px",
+            }
+          }
+        />
+      </div>
+      <div
+        className="react-clock__mark react-clock__minute-mark"
+        style={
+          Object {
+            "transform": "rotate(318deg)",
+          }
+        }
+      >
+        <div
+          className="react-clock__mark__body react-clock__minute-mark__body"
+          style={
+            Object {
+              "bottom": "97%",
+              "top": 0,
+              "width": "1px",
+            }
+          }
+        />
+      </div>
+      <div
+        className="react-clock__mark react-clock__minute-mark"
+        style={
+          Object {
+            "transform": "rotate(324deg)",
+          }
+        }
+      >
+        <div
+          className="react-clock__mark__body react-clock__minute-mark__body"
+          style={
+            Object {
+              "bottom": "97%",
+              "top": 0,
+              "width": "1px",
+            }
+          }
+        />
+      </div>
+      <div
+        className="react-clock__mark react-clock__minute-mark"
+        style={
+          Object {
+            "transform": "rotate(336deg)",
+          }
+        }
+      >
+        <div
+          className="react-clock__mark__body react-clock__minute-mark__body"
+          style={
+            Object {
+              "bottom": "97%",
+              "top": 0,
+              "width": "1px",
+            }
+          }
+        />
+      </div>
+      <div
+        className="react-clock__mark react-clock__minute-mark"
+        style={
+          Object {
+            "transform": "rotate(342deg)",
+          }
+        }
+      >
+        <div
+          className="react-clock__mark__body react-clock__minute-mark__body"
+          style={
+            Object {
+              "bottom": "97%",
+              "top": 0,
+              "width": "1px",
+            }
+          }
+        />
+      </div>
+      <div
+        className="react-clock__mark react-clock__minute-mark"
+        style={
+          Object {
+            "transform": "rotate(348deg)",
+          }
+        }
+      >
+        <div
+          className="react-clock__mark__body react-clock__minute-mark__body"
+          style={
+            Object {
+              "bottom": "97%",
+              "top": 0,
+              "width": "1px",
+            }
+          }
+        />
+      </div>
+      <div
+        className="react-clock__mark react-clock__minute-mark"
+        style={
+          Object {
+            "transform": "rotate(354deg)",
+          }
+        }
+      >
+        <div
+          className="react-clock__mark__body react-clock__minute-mark__body"
+          style={
+            Object {
+              "bottom": "97%",
+              "top": 0,
+              "width": "1px",
+            }
+          }
+        />
+      </div>
+      <div
+        className="react-clock__mark react-clock__hour-mark"
+        style={
+          Object {
+            "transform": "rotate(30deg)",
+          }
+        }
+      >
+        <div
+          className="react-clock__mark__body react-clock__hour-mark__body"
+          style={
+            Object {
+              "bottom": "95%",
+              "top": 0,
+              "width": "3px",
+            }
+          }
+        />
+      </div>
+      <div
+        className="react-clock__mark react-clock__hour-mark"
+        style={
+          Object {
+            "transform": "rotate(60deg)",
+          }
+        }
+      >
+        <div
+          className="react-clock__mark__body react-clock__hour-mark__body"
+          style={
+            Object {
+              "bottom": "95%",
+              "top": 0,
+              "width": "3px",
+            }
+          }
+        />
+      </div>
+      <div
+        className="react-clock__mark react-clock__hour-mark"
+        style={
+          Object {
+            "transform": "rotate(90deg)",
+          }
+        }
+      >
+        <div
+          className="react-clock__mark__body react-clock__hour-mark__body"
+          style={
+            Object {
+              "bottom": "95%",
+              "top": 0,
+              "width": "3px",
+            }
+          }
+        />
+      </div>
+      <div
+        className="react-clock__mark react-clock__hour-mark"
+        style={
+          Object {
+            "transform": "rotate(120deg)",
+          }
+        }
+      >
+        <div
+          className="react-clock__mark__body react-clock__hour-mark__body"
+          style={
+            Object {
+              "bottom": "95%",
+              "top": 0,
+              "width": "3px",
+            }
+          }
+        />
+      </div>
+      <div
+        className="react-clock__mark react-clock__hour-mark"
+        style={
+          Object {
+            "transform": "rotate(150deg)",
+          }
+        }
+      >
+        <div
+          className="react-clock__mark__body react-clock__hour-mark__body"
+          style={
+            Object {
+              "bottom": "95%",
+              "top": 0,
+              "width": "3px",
+            }
+          }
+        />
+      </div>
+      <div
+        className="react-clock__mark react-clock__hour-mark"
+        style={
+          Object {
+            "transform": "rotate(180deg)",
+          }
+        }
+      >
+        <div
+          className="react-clock__mark__body react-clock__hour-mark__body"
+          style={
+            Object {
+              "bottom": "95%",
+              "top": 0,
+              "width": "3px",
+            }
+          }
+        />
+      </div>
+      <div
+        className="react-clock__mark react-clock__hour-mark"
+        style={
+          Object {
+            "transform": "rotate(210deg)",
+          }
+        }
+      >
+        <div
+          className="react-clock__mark__body react-clock__hour-mark__body"
+          style={
+            Object {
+              "bottom": "95%",
+              "top": 0,
+              "width": "3px",
+            }
+          }
+        />
+      </div>
+      <div
+        className="react-clock__mark react-clock__hour-mark"
+        style={
+          Object {
+            "transform": "rotate(240deg)",
+          }
+        }
+      >
+        <div
+          className="react-clock__mark__body react-clock__hour-mark__body"
+          style={
+            Object {
+              "bottom": "95%",
+              "top": 0,
+              "width": "3px",
+            }
+          }
+        />
+      </div>
+      <div
+        className="react-clock__mark react-clock__hour-mark"
+        style={
+          Object {
+            "transform": "rotate(270deg)",
+          }
+        }
+      >
+        <div
+          className="react-clock__mark__body react-clock__hour-mark__body"
+          style={
+            Object {
+              "bottom": "95%",
+              "top": 0,
+              "width": "3px",
+            }
+          }
+        />
+      </div>
+      <div
+        className="react-clock__mark react-clock__hour-mark"
+        style={
+          Object {
+            "transform": "rotate(300deg)",
+          }
+        }
+      >
+        <div
+          className="react-clock__mark__body react-clock__hour-mark__body"
+          style={
+            Object {
+              "bottom": "95%",
+              "top": 0,
+              "width": "3px",
+            }
+          }
+        />
+      </div>
+      <div
+        className="react-clock__mark react-clock__hour-mark"
+        style={
+          Object {
+            "transform": "rotate(330deg)",
+          }
+        }
+      >
+        <div
+          className="react-clock__mark__body react-clock__hour-mark__body"
+          style={
+            Object {
+              "bottom": "95%",
+              "top": 0,
+              "width": "3px",
+            }
+          }
+        />
+      </div>
+      <div
+        className="react-clock__mark react-clock__hour-mark"
+        style={
+          Object {
+            "transform": "rotate(360deg)",
+          }
+        }
+      >
+        <div
+          className="react-clock__mark__body react-clock__hour-mark__body"
+          style={
+            Object {
+              "bottom": "95%",
+              "top": 0,
+              "width": "3px",
+            }
+          }
+        />
+      </div>
+    </div>
+    <div
+      className="react-clock__hand react-clock__hour-hand"
+      style={
+        Object {
+          "transform": "rotate(570.015deg)",
+        }
+      }
+    >
+      <div
+        className="react-clock__hand__body react-clock__hour-hand__body"
+        style={
+          Object {
+            "bottom": "45%",
+            "top": "25%",
+            "width": "4px",
+          }
+        }
+      />
+    </div>
+    <div
+      className="react-clock__hand react-clock__minute-hand"
+      style={
+        Object {
+          "transform": "rotate(6840.9deg)",
+        }
+      }
+    >
+      <div
+        className="react-clock__hand__body react-clock__minute-hand__body"
+        style={
+          Object {
+            "bottom": "45%",
+            "top": "15%",
+            "width": "2px",
+          }
+        }
+      />
+    </div>
+    <div
+      className="react-clock__hand react-clock__second-hand"
+      style={
+        Object {
+          "transform": "rotate(54deg)",
+        }
+      }
+    >
+      <div
+        className="react-clock__hand__body react-clock__second-hand__body"
+        style={
+          Object {
+            "bottom": "45%",
+            "top": "5%",
+            "width": "1px",
+          }
+        }
+      />
+    </div>
+  </time>
+</div>
+`;

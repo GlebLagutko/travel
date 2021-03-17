@@ -1,8 +1,6 @@
 import React from "react";
 import {Button} from "@material-ui/core";
 import {useDispatch, useSelector} from 'react-redux'
-import {CHANGE_SHOW} from "../../store/actions/ChangeShow";
-import {CHANGE_VOTE} from "../../store/actions/ChangeVote";
 import {CHANGE_RESULTS_SHOW} from "../../store/actions/ChangeResultsShow";
 import strings from '../localization'
 

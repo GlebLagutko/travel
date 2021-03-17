@@ -397,5 +397,9 @@ body {
     cursor: pointer;
 }
 
+.MuiButton-root {
+    border: 2px solid rgba(0, 0, 0, 0.8) !important;
+}
+
 
 

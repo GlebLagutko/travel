@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`VideoWidget renders correctly 1`] = `
+<iframe
+  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+  allowFullScreen={true}
+  className="makeStyles-root-1"
+  frameBorder="0"
+  src="http://test.vodeo"
+/>
+`;

@@ -1,0 +1,49 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CardContainer renders correctly 1`] = `
+<div>
+  <div
+    class="makeStyles-root-1"
+  >
+    <div
+      class="MuiPaper-root MuiCard-root makeStyles-root-2 MuiPaper-elevation1 MuiPaper-rounded"
+    >
+      <button
+        class="MuiButtonBase-root MuiCardActionArea-root"
+        tabindex="0"
+        type="button"
+      >
+        <div
+          class="MuiCardMedia-root makeStyles-media-3"
+          style="background-image: url(assets/images/thumbnail-norway.jpg);"
+          title="Contemplative Reptile"
+        />
+        <div
+          class="MuiCardContent-root"
+        >
+          <h2
+            class="MuiTypography-root MuiTypography-h5 MuiTypography-gutterBottom"
+          >
+            <span>
+              Norway
+            </span>
+          </h2>
+          <h2
+            class="MuiTypography-root MuiTypography-h5 MuiTypography-gutterBottom"
+          >
+            <span>
+              Oslo
+            </span>
+          </h2>
+        </div>
+        <span
+          class="MuiCardActionArea-focusHighlight"
+        />
+        <span
+          class="MuiTouchRipple-root"
+        />
+      </button>
+    </div>
+  </div>
+</div>
+`;

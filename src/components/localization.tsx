@@ -22,8 +22,9 @@ export default new LocalizedStrings({
         question:'Sign out of your account ?',
         have_account:'I have an account',
         not_exist:'No such user exists',
-        enter:'Login to account'
-
+        enter:'Login to account',
+        max_file_size:'Max file size: 200Kb, accepted: jpg|gif|png',
+        file_size_error:'Размер файла слишком велик'
     },
     ru: {
         user_exist: "Пользователь уже существует.",
@@ -45,8 +46,9 @@ export default new LocalizedStrings({
         question:'Выйти из аккаунта ?',
         have_account:'У меня есть аккаунт',
         not_exist:'Не существует такого пользователя',
-        enter:'Вход в аккаунт'
-
+        enter:'Вход в аккаунт',
+        max_file_size:'Максимальный размер файла: 200КБ, принимается: jpg|gif|png',
+        file_size_error:'File size is too big'
     },
     de: {
         user_exist: "Benutzer existiert bereits.",
@@ -68,8 +70,9 @@ export default new LocalizedStrings({
         question:'Melden Sie sich von Ihrem Konto ab ?',
         have_account:'Ich habe einen Account',
         not_exist:'Es gibt keinen solchen Benutzer',
-        enter:'Ins Konto einloggen'
-
+        enter:'Ins Konto einloggen',
+        max_file_size:'Maximale Dateigröße: 200KB, akzeptiert: jpg|gif|png',
+        file_size_error:'Die Dateigröße ist zu groß'
     }
 })
 ;

@@ -5,11 +5,14 @@ import Typography from '@material-ui/core/Typography';
 import InputBase from '@material-ui/core/InputBase';
 import {createStyles, fade, makeStyles, Theme} from '@material-ui/core/styles';
 import SearchIcon from '@material-ui/icons/Search';
-import {ClearOutlined} from "@material-ui/icons";
+import {ClearOutlined, Home} from "@material-ui/icons";
 import {SelectLanguage} from "../SelectLanguage";
 import {useSelector} from 'react-redux'
 import {UserInfo} from "../UserInfo";
 import strings from '../localization'
+import {CHANGE_COUNTRY} from "../../store/actions/ChangeCountry";
+import {saveState} from "../../store/SaveState";
+import store from "../../store";
 
 
 const useStyles = makeStyles((theme: Theme) =>
@@ -87,7 +90,7 @@ export default function MainHeader({changeHolder}: HeaderProps) {
 
     const inputRef = useRef(null);
     const language = useSelector(languageState);
-    strings.setLanguage(language)
+    strings.setLanguage(language);
 
     const placeHolder = strings.search;
 
@@ -96,6 +99,9 @@ export default function MainHeader({changeHolder}: HeaderProps) {
         <div className={classes.root}>
             <AppBar position="static">
                 <Toolbar>
+                    <Typography variant="h6" noWrap>
+                        <Home/>
+                    </Typography>
                     <SelectLanguage/>
                     <Typography className={classes.title} variant="h6" noWrap>
                         Travel app
@@ -117,7 +123,6 @@ export default function MainHeader({changeHolder}: HeaderProps) {
                             />
                         </div>
                         <div onClick={() => {
-                            console.log(inputRef.current.firstChild);
                             changeHolder('');
                             inputRef.current.firstChild.value = '';
                         }}

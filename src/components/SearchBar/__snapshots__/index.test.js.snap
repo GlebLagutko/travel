@@ -1,0 +1,16 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SearchBar renders correctly 1`] = `
+<input
+  onChange={[Function]}
+  placeholder="Search"
+  style={
+    Object {
+      "background": "#F2F1F9",
+      "border": "none",
+      "padding": "0.5rem",
+      "width": "20rem",
+    }
+  }
+/>
+`;

@@ -3,13 +3,13 @@ import React, {useState} from 'react';
 import {Button, Modal} from 'react-bootstrap';
 import store from "../../store";
 import {useDispatch, useSelector} from 'react-redux'
-import {createStyles, IconButton, makeStyles, TextField, Theme} from "@material-ui/core";
-import {PhotoCamera} from "@material-ui/icons";
+import {createStyles, makeStyles, TextField, Theme} from "@material-ui/core";
 import {CHANGE_SHOW} from "../../store/actions/ChangeShow";
-import {gql, useMutation, useApolloClient} from "@apollo/client";
+import {gql, useApolloClient, useMutation} from "@apollo/client";
 import strings from "../localization"
 import {USER_LOGGED_IN} from "../../store/actions/UserLoggedIn";
 import {saveState} from "../../store/SaveState";
+import ImageUploader from "react-images-upload";
 
 //
 const showState = state => state.value.show;
@@ -44,6 +44,10 @@ export function ModalLogin() {
     const classes = useStyles();
 
     const [ImageSelected, setImageSelected] = useState(null);
+    const onDrop = picture => {
+        setImageSelected(picture[0]);
+    };
+
     const [inputValue, setInput] = useState('');
     const [create, setCreate] = useState(true)
     const dispatch = useDispatch();
@@ -78,7 +82,9 @@ export function ModalLogin() {
                     })
                     .then(result => {
                         dispatch({type: USER_LOGGED_IN, value: result.data.UserByName});
+                        handleClose();
                         saveState(store);
+                        setImageSelected(null)
                     });
             }
         }
@@ -87,7 +93,7 @@ export function ModalLogin() {
 
     const handleClose = () => {
         dispatch({type: CHANGE_SHOW, value: false});
-    }
+    };
 
     // @ts-ignore
     const time: number = store.getState().value.time;
@@ -102,15 +108,19 @@ export function ModalLogin() {
                         setInput(event.target.value);
                     })}/>
                     <div className={classes.image}
-                    > {strings.choose_image} :
-                        <input
-                            type="file"
-                            name="image"
-                            onChange={(e) => setImageSelected(e.target.files[0])}
+                    >
+                        <ImageUploader
+                            singleImage={true}
+                            withIcon={false}
+                            withPreview={true}
+                            onChange={onDrop}
+                            imgExtension={[".jpg", ".gif", ".png", ".gif"]}
+                            maxFileSize={200000}
+                            buttonText={strings.choose_image}
+                            label={strings.max_file_size}
+                            fileSizeError={strings.max_file_size}
                         />
                     </div>
-
-
                 </Modal.Body>
                 <Modal.Footer>
                     <Button variant="primary" disabled={!inputValue.trim() || !ImageSelected}
@@ -131,7 +141,7 @@ export function ModalLogin() {
                                                 variables: {userName: inputValue, file: ImageSelected}
                                             });
                                         }
-                                    }).then(handleClose);
+                                    })
                             }}>
                         {strings.save_user}
                     </Button>
@@ -175,7 +185,7 @@ export function ModalLogin() {
                                         } else {
                                             alert(strings.not_exist)
                                         }
-                                    }).then(handleClose);
+                                    }).then();
                             }}>
                         {strings.login}
                     </Button>

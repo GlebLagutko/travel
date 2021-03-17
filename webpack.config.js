@@ -14,7 +14,6 @@ module.exports = {
                 test: /\.js$/,
                 exclude: /node_modules/,
                 use: ["babel-loader"],
-
             },
             {
                 test: /\.css$/,
@@ -28,7 +27,7 @@ module.exports = {
                         options: {
                             limit: 10000,
                         },
-                    },
+                    }   ,
                 ],
             },
             {
@@ -58,7 +57,7 @@ module.exports = {
         extensions: ['.tsx', '.ts', '.js'],
     },
     devServer: {
-        port: 8082,
+        port: 8081,
         historyApiFallback: true,
     },
     plugins: [

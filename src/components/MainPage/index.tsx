@@ -1,10 +1,8 @@
 import React, {useState} from 'react'
 import {useDispatch, useSelector} from 'react-redux'
 import MainHeader from "../MainHeader";
-import CountryCard from "../CountryCard";
-import {CardContainer} from "../CardContainer";
+import CardContainer from "../CardContainer";
 import {makeStyles} from "@material-ui/core/styles";
-import {Footer} from "../../Footer";
 
 const useStyles = makeStyles({
     root: {
@@ -15,7 +13,7 @@ const useStyles = makeStyles({
     },
 });
 
-export function MainPage() {
+export default function MainPage() {
 
     const styles = useStyles();
 

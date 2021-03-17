@@ -1,0 +1,27 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Footer renders correctly 1`] = `
+<footer>
+  <a
+    href="https://github.com/GlebLagutko"
+    target="_blank"
+  >
+    GitHub
+  </a>
+  <span>
+    2021
+  </span>
+  <img
+    alt="Icon"
+    height="50px"
+    src="https://rs.school/images/rs_school_js.svg"
+    width="80px"
+  />
+  <a
+    href="https://rs.school/js/"
+    target="_blank"
+  >
+    RS School
+  </a>
+</footer>
+`;

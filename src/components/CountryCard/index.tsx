@@ -43,10 +43,10 @@ export default function CountryCard({country}) {
                 />
                 <CardContent>
                     <Typography gutterBottom variant="h5" component="h2">
-                        {country.name}
+                        <span>{country.name}</span>
                     </Typography>
                     <Typography gutterBottom variant="h5" component="h2">
-                        {country.capital}
+                        <span>{country.capital}</span>
                     </Typography>
                 </CardContent>
             </CardActionArea>

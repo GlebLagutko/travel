@@ -29,7 +29,7 @@ const voteState = state => state.value.vote;
 const langState = state => state.value.language;
 
 
-export function VoteModal({attractions}) {
+export function VoteModal({attractions, refetchFunction}) {
     const classes = useStyles();
 
     console.log('modal render');
@@ -43,6 +43,9 @@ export function VoteModal({attractions}) {
 
     const handleClose = () => {
         dispatch({type: CHANGE_VOTE, value: false});
+        console.log('===ref====')
+        console.log(refetchFunction);
+        refetchFunction();
     };
 
 

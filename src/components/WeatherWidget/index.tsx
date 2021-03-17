@@ -5,7 +5,7 @@ import {trackPromise} from 'react-promise-tracker'
 
 const languageState = state => state.value.language;
 
-export const WeatherWidget = ({city, cityCoordinates}) => {
+export default function WeatherWidget({city, cityCoordinates}) {
 
     const language = useSelector(languageState);
 

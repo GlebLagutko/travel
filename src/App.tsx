@@ -1,7 +1,7 @@
 import './App.css';
 
 import React from 'react';
-import {MainPage} from "./components/MainPage";
+import MainPage from "./components/MainPage";
 import {LoadingSpinner} from './components/LoadingSpinner';
 
 import {useSelector} from 'react-redux'
@@ -11,9 +11,8 @@ import {CountryPage} from "./components/CountryPage";
 import {ApolloClient, ApolloProvider, InMemoryCache} from '@apollo/client';
 import {Footer} from "./Footer";
 import {ModalLogin} from "./components/ModalLogin/ModalLogin";
-import {Login} from "./components/Login";
 import {createUploadLink} from 'apollo-upload-client'
-import {ModalLogou} from "./components/ModalLogout";
+import ModalLogout from "./components/ModalLogout";
 
 
 export const client = new ApolloClient({
@@ -23,6 +22,13 @@ export const client = new ApolloClient({
         uri: 'http://localhost:3020/graphql',
     }),
 });
+// export const client = new ApolloClient({
+//     uri: "https://gentle-ridge-12513.herokuapp.com/graphql",
+//     cache: new InMemoryCache(),
+//     link: createUploadLink({
+//         uri: 'https://gentle-ridge-12513.herokuapp.com/graphql',
+//     }),
+// });
 
 
 const countryState = state => state.value.country;
@@ -40,7 +46,7 @@ function App() {
                         currentPage
                     }
                     <ModalLogin/>
-                    <ModalLogou/>
+                    <ModalLogout/>
                 </ApolloProvider>
                 <LoadingSpinner/>
 

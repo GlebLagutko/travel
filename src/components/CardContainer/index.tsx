@@ -2,7 +2,8 @@ import React, {useState} from "react";
 import CountryCard from "../CountryCard";
 import {makeStyles} from "@material-ui/core/styles";
 import {useSelector} from "react-redux";
-import {gql, useQuery} from "@apollo/client";
+import {useQuery} from "@apollo/client";
+import query from "./query";
 
 
 interface ContainerProps {
@@ -24,27 +25,15 @@ const useStyles = makeStyles({
 
 const languageState = state => state.value.language;
 
-export function CardContainer({searchValue}: ContainerProps) {
+export default function CardContainer({searchValue}: ContainerProps) {
 
     const [countries, setCountries] = useState([]);
     const language = useSelector(languageState);
-
-    const query = gql`
-        query Countries($language: String!){
-            Countries(language: $language){
-                id
-                name
-                video
-                urlName
-                capital
-            }
-        }`;
 
     useQuery(query, {
         variables: {language: language},
         onCompleted: data => {
             setCountries(data["Countries"]);
-            console.log(countries);
         }
     });
     //

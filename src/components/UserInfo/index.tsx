@@ -14,12 +14,10 @@ export const UserInfo = (props) => {
     const dispatch = useDispatch();
     strings.setLanguage(language);
 
-    console.log(currentUser)
-
     if (currentUser) {
         return <div className="user-info" onClick={() => dispatch({type: CHANGE_SHOW_OUT, value: true})}>
             <span>{currentUser.name + ' '} </span>
-            <img src={`http://localhost:3020/${currentUser.fileName}`}
+            <img src={`/${currentUser.fileName}`}
                  style={{width: '40px', height: "40px", borderRadius: '100%'}}/>
         </div>
     } else {

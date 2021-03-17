@@ -1,11 +1,8 @@
 import React, {useState} from "react";
 import {Rating} from '@material-ui/lab'
 import {createStyles, makeStyles, Theme} from "@material-ui/core";
-import {gql, useMutation, useApolloClient} from "@apollo/client";
-import {USER_LOGGED_IN} from "../../store/actions/UserLoggedIn";
-import {saveState} from "../../store/SaveState";
+import {gql, useMutation} from "@apollo/client";
 import {useSelector} from 'react-redux'
-import store from "../../store";
 
 const useStyles = makeStyles((theme: Theme) =>
     createStyles({
@@ -29,23 +26,11 @@ export function VoteBar({attraction}) {
     const [value, setValue] = useState(vote ? vote.rate : 0);
 
 
-    const apolloClient = useApolloClient();
-
     const AUTHENTICATE = gql`
         mutation vote($rate: Int!, $userId: Int!, $attractionPath: String!) {
             vote(rate: $rate, userId: $userId, attractionPath: $attractionPath)
         }`;
 
-
-    const userByNameQuery = gql`
-        query UserByName($name: String!)
-        {
-            UserByName(name: $name){
-                id
-                name
-                fileName
-            }
-        }`;
 
     const [authenticate] = useMutation(AUTHENTICATE, {}
     );

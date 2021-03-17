@@ -1,0 +1,48 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ExchangeWidget renders correctly 1`] = `
+<div>
+  <div
+    class="exchange"
+  >
+    <div
+      style="color: black;"
+    >
+      <strong>
+        NOK
+      </strong>
+    </div>
+    <div
+      class="exchange-div"
+    >
+      <div>
+        <strong>
+          USD
+        </strong>
+         : 
+        <span>
+          0.1182
+        </span>
+      </div>
+      <div>
+        <strong>
+          EUR
+        </strong>
+         : 
+        <span>
+          0.09916
+        </span>
+      </div>
+      <div>
+        <strong>
+          BYN
+        </strong>
+         : 
+        <span>
+          10
+        </span>
+      </div>
+    </div>
+  </div>
+</div>
+`;
