@@ -8,7 +8,7 @@ https://gentle-ridge-12513.herokuapp.com/app/
 
 Cсылка на репозиторий сервера https://github.com/GlebLagutko/travelServer
 
-Создана API и вот примеры запросов:
+Создана graphQL API и вот примеры запросов:
 
 ![image](./assets/images/read/first.png)
 
