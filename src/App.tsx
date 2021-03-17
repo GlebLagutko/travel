@@ -9,17 +9,19 @@ import {useSelector} from 'react-redux'
 import {Link, Redirect, Route, Switch} from "react-router-dom";
 import {CountryPage} from "./components/CountryPage";
 import {ApolloClient, ApolloProvider, InMemoryCache} from '@apollo/client';
-import {Footer} from "./Footer";
+
 import {ModalLogin} from "./components/ModalLogin/ModalLogin";
 import {createUploadLink} from 'apollo-upload-client'
 import ModalLogout from "./components/ModalLogout";
+// @ts-ignore
+import Footer from "./Footer";
 
 
 export const client = new ApolloClient({
-    uri: "http://localhost:3020/graphql",
+    uri: "https://gentle-ridge-12513.herokuapp.com/graphql",
     cache: new InMemoryCache(),
     link: createUploadLink({
-        uri: 'http://localhost:3020/graphql',
+        uri: 'https://gentle-ridge-12513.herokuapp.com/graphql',
     }),
 });
 // export const client = new ApolloClient({
